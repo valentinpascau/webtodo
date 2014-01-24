@@ -1,0 +1,169 @@
+body {
+  padding-top: 60px; /* When using the navbar-top-fixed */
+}
+.navbar-inner { 
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.delete-item{
+  cursor:pointer;
+}
+.list-items{
+  margin-left:10px;
+  list-style-type: none;
+}
+.list-item{
+  line-height:40px;
+  height:40px;
+  cursor: pointer;
+}
+.list-item:hover{
+
+  background:#e3e3e3;
+}
+.list-item-selected{
+  line-height:40px;
+  height:40px;
+  cursor: pointer;
+  background:#e3e3e3;
+}
+.input-addToDo{
+  height:50px;
+}
+input[class=input-xxlarge] {
+  height: 44px ;
+  margin-bottom: 10px;
+  line-height: 30px;
+  padding: 11px 19px;
+  font-size: 17.5px;
+  width: 100%;
+}
+input[class=input-medium] {
+  height: 30px ;
+  width: 100%;
+
+}
+
+.todo-item{
+  margin-top:30px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background:#fefefe;
+  line-height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow:  0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow:  0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.todo-item {
+  position:relative;
+}
+.todo-item .span8{
+  cursor: pointer;
+}
+.todo-dropdown{
+  margin-top:30px;
+  border-top:1px solid #e3e3e3;
+  padding:10px;
+  height:100px;
+  display:none;
+}
+.priority-high{
+  background:#f2bdb1;
+}
+.priority-medium{
+  background: #a7dff1;
+}
+.priority-low{
+  background: #f1ceab;
+}
+.priority-done{
+  background: #d5ecbf;
+}
+.dateArea {
+  margin-top: -2px;
+}
+.optionTask {
+margin-right: 5px;
+margin-top: 4px;
+}
+.pColor {
+
+  float: left;
+  margin-bottom: 4px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  margin-left: 17px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.priorityWrap{
+  padding-left:18px;
+}
+.input[readonly]{
+  cursor:pointer;
+}
+.input-custom{
+  display:block;
+  width:100%;
+  height:40px;
+}
+.pColor:hover {
+  -moz-box-shadow: 0 0 5px 2px #628ef0;
+  -webkit-box-shadow: 0 0 5px 2px #628ef0;
+  box-shadow: 0 0 5px 2px #628ef0;
+}
+
+#p1{
+  background-color: #f2bdb1;
+  font-size: 12px;
+  text-align: center;
+}
+#p2{
+  background-color: #a7dff1;
+  font-size: 12px;
+  text-align: center;
+} 
+#p3{
+  background-color: #f1ceab;
+  font-size: 12px;
+  text-align: center;
+}
+#p4{
+  background-color: #d5ecbf;
+  font-size: 12px;
+  text-align: center;
+}
+.area-text{
+  margin-bottom: 0px;
+  width: 100%;
+}
+.datepicker {
+  cursor: pointer;
+}
+#dialog-modal {
+  display: none;
+  position: relative;
+}
+
+#dialog {
+  display: none;
+}
+#inputReset {
+  margin-left: 49px;
+}
+.ui-pnotify.custom .ui-pnotify-container {
+      background-color: #404040 !important;
+      background-image: none !important;
+      border: none !important;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }

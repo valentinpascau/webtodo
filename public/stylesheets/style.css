@@ -1,0 +1,312 @@
+body{
+	background-image: url("../images/back2.jpg") ;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#textDiv{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: #eee;
+}
+h1{
+	margin-bottom: 5px;
+	font-size: 25px;
+}
+p{
+	margin-top: 5px;
+}
+
+
+#frontLog{
+	display: block;
+	width: 838px;
+	height: 328px;
+	background:transparent;
+	margin: 0 auto;
+	margin-top: 150px;
+	position: relative;
+}
+
+#mottoDiv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 520px;
+	height: 328px;
+}
+
+#textDiv{
+	width: 470px;
+	margin-top: 100px;
+}
+
+#signIn{
+	
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+	border-bottom: solid 1px #ccc;
+	background:-webkit-linear-gradient(top,#fff 0,#ddd 100%);
+	position: absolute;
+	left: 536px;
+	width:300px;
+	height: 148px; 
+	clear: both;
+	display: block;
+	border-radius: 4px;
+}
+#inputSigninMail{
+	padding-left: 6px;
+	margin-top: 13px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	height: 25px;
+	width: 234px;
+	margin-left: 12px;
+	outline: 0;
+
+}
+#inputSigninMail:focus{
+	border:1px #1ddbea solid;
+
+}
+
+#inputSigninPass:focus{
+	border:1px #1ddbea solid;
+}
+#inputSigninPass{
+	padding-left: 6px;
+	margin-top: 10px;
+	margin-left: 12px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	height: 25px;
+	outline: 0;
+	width: 234px;
+}
+.signForm:focus{
+	border:1px red solid;
+	outline: 0;
+
+}
+span{
+	font-size: 12px;
+	color: #6f6f6f;
+	margin-left: 25px;
+
+}
+#checkId{
+	position: absolute;
+	top:1px;
+}
+#submitSignin{
+	cursor: pointer;
+	background-color: #019ad2;
+	display: inline-block;
+	position: absolute;
+	top:88px;
+	left:169px;
+	padding: 7px 14px;
+	font-size: 13px;
+	font-weight: bold;
+	border:0;
+	border-radius: 4px;
+	color: #fff;
+}
+#submitSignin:hover{
+	background-color: #33bcef;
+}
+#forgotbox{
+	position: absolute;
+	left: -10px;
+	top:124px;
+	text-decoration: underline;
+	
+}
+#forgotbox:hover{
+	cursor: pointer;
+}
+
+#signUp{
+	background: -webkit-linear-gradient(top,#fff 0,#ddd 100%);
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+	border-bottom: solid 1px #ccc;
+	border-radius: 4px;
+	position: absolute;
+	left: 536px;
+	top:160px;
+	width:300px;
+	height: 206px; 
+	clear: both;
+	display: block;
+}
+
+#checkOk1 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:47px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #1ddb2a;
+}
+
+#sign {
+	font-size: 20px;
+	margin: 0;
+	padding: 4px;
+	color: #f7f7f7;
+
+}
+
+#checkX1 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:47px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #e00;
+}
+
+#signX {
+	font-size: 20px;
+	margin: 0;
+	padding: 5px;
+	color: #f7f7f7;
+
+}
+
+#checkOk2 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:83px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #1ddb2a;
+}
+
+#checkX2 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:83px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #e00;
+}
+#checkOk3 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:118px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #1ddb2a;
+}
+
+#checkX3 {
+	display: none;
+	position: absolute;
+	left:260px;
+	top:118px;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	background: #e00;
+
+}
+
+.inputSignup{
+	padding-left: 6px;
+	margin-top: 6px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	height: 25px;
+	width: 234px;
+	margin-left: 12px;
+	outline: 0;
+}
+
+.inputSignup:focus{
+	border:1px #1ddbea solid;
+}
+h3{	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-left: 12px;
+	margin-bottom: 15px;
+
+}
+
+#submitSignup{
+	cursor: pointer;
+	margin-left: 128px;
+	margin-top: 10px;
+	background-color: #019ad2;
+	display: inline-block;
+	padding: 7px 14px;
+	font-size: 13px;
+	font-weight: bold;
+	border:0;
+	border-radius: 4px;
+	color: #fff;
+}
+
+#submitSignup:hover{
+	background-color: #33bcef;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background-color: #f3f3f3;
+    
+}
+#dialog-modal {
+	display: none;
+	position: relative;
+}
+#subut {
+	padding: 5px 14px;
+	font-size: 13px;
+	font-weight: bold;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	position: absolute;
+	top:60px;
+	right: 19px;
+	background-color: #6f6f6f;
+
+}
+
+#inputrec {
+	width: 256px;
+	margin-top: 18px;
+}
+
+#logFacebook {
+	position: absolute;
+	top: 90px;
+	left:14px;
+	height: 30px;
+	width: 150px;
+	background-image: url("../images/face3.png");
+	cursor: pointer;
+
+	
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>WebToDo++</title>
+	  <link href="stylesheets/datepicker.css" rel="stylesheet">
+	  <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+	  <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	  <link href="stylesheets/main.css" rel="stylesheet" media="screen">
+	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	  <script type="text/javascript"src="javascripts/jquery.js"></script>
+	  <script type="text/javascript"src="javascripts/bootstrap.min.js"></script>
+	  <script type="text/javascript"src="javascripts/main.js"></script>
+	  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="/javascripts/listTodo.js"></script>
+		<script src="/javascripts/bootstrap-datepicker.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2"></div>
+			<div class="span8" style="text-align:center;">
+				<h1>Welcome to WebToDo++</h1>
+			</div>
+			<div class="span2"></div>
+
+		</div>
+
+        <div id="dialog" title="Reset Pasword">
+		  	<form action="/resetPassword" method="POST">
+		  		<label class="control-label" for="inputReset">Email</label>
+		  		<input type="text" id="inputReset" name="recoverPassword">
+		  		<input class="btn pull-right btn-primary" type="submit" data-dismiss="modal" value="Send">
+		  	</form>
+		</div>
+
+
+		<div class="row-fluid" style="margin-top:50px">
+			<div class="span3"></div>
+			<div class="span6">
+				<form method="POST" action="/login" class="form-horizontal">
+				  <div class="control-group">
+				    <label class="control-label" for="inputSigninMail">Email</label>
+				    <div class="controls">
+				      <input type="text" id="inputSigninMail" name="signinmail" placeholder="Enter your Email">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputSigninPass">Password</label>
+				    <div class="controls">
+				      <input type="password" id="inputSigninPass" name="signinpass" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">
+				      <label class="checkbox">
+				        <div id="forgotbox">
+							<a href="#" id="modal-window" style="text-decoration:underline;">Forgot your password?</a>
+						</div>
+				      </label>
+				      <button type="submit" class="btn btn-primary">Sign in</button>
+				      <a href="http://localhost:3000/facebookLogin" id="logFacebook">
+						<img src="/images/face3.png">
+						</a>
+				    </div>
+				  </div>
+				</form>
+			</div>
+			<div class="span3">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span3">
+			</div>
+			<div class="span6">
+				<form method="POST" action="/reg" autocomplete="off" class="form-horizontal">
+				  <div class="control-group">
+				    <label class="control-label" for="inputSigninMail">Username</label>
+				    <div class="controls">
+				      <input type="text" id="newuserid" name="newuser" placeholder="Enter your username">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="newemail">Email</label>
+				    <div class="controls">
+				      <input type="text" id="newemail" name="signupmail" placeholder="Enter your Email">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="signuppass">Password</label>
+				    <div class="controls">
+				      <input type="password" id="signuppass" name="signuppass" placeholder="Password">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">			      
+				      <button type="submit" class="btn btn-primary">Create Account</button>
+				    </div>
+				  </div>
+				</form>
+
+			</div>
+
+			<div class="span3">
+			</div>
+		</div>	
+	</div>	
+</body>
+</html>

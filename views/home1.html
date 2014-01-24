@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>WebToDo++</title>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/normalize.css">
+	<link type="text/css" rel="stylesheet" href="/stylesheets/stylehome.css">
+	<link type="text/css" rel="stylesheet" href="/stylesheets/datepicker.css">
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="/javascripts/listTodo.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	
+</head>
+<body>
+	
+	<div id="wrap">
+		<header id="head">
+			<div id="title-home">
+				<span >WebToDo++</span>
+				<form action="/logout" method="get">
+        			<input id="logout" type="submit" value="LogOut" name="logout" />
+    			</form>
+			</div>
+		</header>
+
+		<div id="listWrap">
+			<div id="titlelist">
+				<span id="title">ToDoList</span>
+			</div>
+			<div id="watch-li">
+					<div id="watch"></div>
+					<span id="today">Watch</span>		
+			</div>
+			<div id="optionList">
+				<div id="newlistDiv">
+					<div id="imgnewList"></div>
+					<span id="addlist">Add new list</span>
+				</div>
+
+				<div id="removeList">
+					<div id="removeImg"></div>
+				</div>
+			</div>
+
+			<ul id="ulList">
+
+			</ul>
+
+		</div>
+		
+		<div id="todoWrap">
+			<div id="todo-cont">
+				<div id="add-task">
+					<input id="input-task" type="text" name="add-input" placeholder=" Add new task ">
+				</div>
+				<div id="task-container">
+					<ul id="ul-task">
+		
+					</ul>
+				</div>
+
+
+				<div id="task-check-container">
+					<div>
+						<span id="span-done">Done list</span>
+					</div>
+					<ul id="ul-task-check">
+
+
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
